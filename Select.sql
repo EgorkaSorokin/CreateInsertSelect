@@ -41,7 +41,7 @@ WHERE musician_name NOT IN
 	SELECT musician_name
 	FROM musicians
 	JOIN MusiciansAlbums ON Musicians.musician_id = MusiciansAlbums.musician_id
-    JOIN albums ON MusiciansAlbums.album_id = Albums.album_id 
+	JOIN albums ON MusiciansAlbums.album_id = Albums.album_id 
 	WHERE album_year = 2020;
 
 select  collection_name, track_name 
